@@ -1,8 +1,8 @@
 {
-  "title": "Hello World Scenario",
-  "description": "Your First Scenario",
+  "title": "Docker Cenário",
+  "description": "Primeiro cenário",
   "difficulty": "beginner",
-  "time": "2 minutes",
+  "time": "10 minutes",
   "details": {
     "steps": [{
       "title": "Step 1 - Run Command",
@@ -16,11 +16,15 @@
       "text": "finish.md"
     }
   },
+  "files": [],
   "environment": {
-    "uilayout": "terminal",
-    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n"
+      "hideintro": true, "hidefinish": true,
+      "showvisualise": true,
+      "scope": "docker run --name=scope -d --net=host --pid=host --privileged -v /var/run/docker.sock:/var/run/docker.sock:rw weaveworks/scope:1.9.1 --probe.docker=true",
+      "scopePort": 4040,
+      "uilayout": "terminal"
   },
   "backend": {
-    "imageid": "bash"
+      "imageid": "ubuntu"
   }
 }
