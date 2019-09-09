@@ -2,23 +2,23 @@ This is your first step.
 
 ## O que é DOCKER
 
-**Docker** é uma plataforma Open Source escrito em Go, que é uma linguagem de programação de alto desempenho desenvolvida dentro do Google, que facilita a criação e administração de ambientes isolados.  **command**
+**Docker** é uma plataforma Open Source escrito em Go, que é uma linguagem de programação de alto desempenho desenvolvida dentro do Google, que facilita a criação e administração de ambientes isolados.
 
 ## Help
 Exibi os possiveis comandos e a forma de executá-los.
 
-`docker help'`{{execute}}
+`docker help`{{execute}}
 
 ## Docker version
 Mostrar as informações da versão do Docker
 
-`docker version'`{{execute}}
+`docker version`{{execute}}
 
 ## Docker info
 
 Comando para verificarmos as informações do Docker Host.
 
-`docker info'`{{execute}}
+`docker info`{{execute}}
 
 ## Docker images
 
@@ -29,5 +29,5 @@ Lista as imagens que temos no nosso host.
 **Created:** data de quando nós criamos a nossa imagem;
 **Size:** tamanho da imagem;
 
-`docker images'`{{execute}}
+`docker images`{{execute}}
 
