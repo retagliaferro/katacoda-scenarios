@@ -4,23 +4,23 @@ This is your first step.
 
 **Docker** é uma plataforma Open Source escrito em Go, que é uma linguagem de programação de alto desempenho desenvolvida dentro do Google, que facilita a criação e administração de ambientes isolados.  **command**
 
-### Help
+## Help
 Exibi os possiveis comandos e a forma de executá-los.
 
 `docker help'`{{execute}}
 
-### Docker version
+## Docker version
 Mostrar as informações da versão do Docker
 
 `docker version'`{{execute}}
 
-### Docker info
+## Docker info
 
 Comando para verificarmos as informações do Docker Host.
 
 `docker info'`{{execute}}
 
-### Docker images
+## Docker images
 
 Lista as imagens que temos no nosso host.
 **Repository:** repositório;
