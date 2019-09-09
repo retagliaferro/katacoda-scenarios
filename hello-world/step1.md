@@ -31,3 +31,8 @@ Lista as imagens que temos no nosso host.
 
 `docker images`{{execute}}
 
+## Docker search
+
+Para que possamos procurar uma imagem, nós podemos utilizar o comando a baixo com o parâmetro nome Ex.: ubuntu, dotnetcore, node … etc, assim ele irá buscar as imagens que são **compatíveis com o nosso server/host** que para esse exemplo estamos utilizando o Linux.
+
+`docker search`{{execute}}
