@@ -2,14 +2,14 @@
 Baixa a imagem no host
 
 `docker pull nginx`{{execute}} <br>
-`docker pull apache`{{execute}}
+`docker pull httpd`{{execute}}
 
 #### Docker run
 Comando para executar um container. Se a imagem não existir no host, o Docker baixa a imagem e depois executa
 
 - **-p:** Porta a porta do container para o host <HOST:CONTAINER>;
 - **-d:** Container seja executado como um processo daemon;
-- **Name:** Nome do container;
+- **--name:** Nome do container;
 
 `docker run --name nginx -p 4040:80 -d nginx`{{execute}}
 - Acessar nginx
@@ -55,17 +55,17 @@ Comando que inicia o container parado.
 `docker ps -q`{{execute}} <br>
 `docker start nginx`{{execute}}
 
-#### Docker run para Apache
+#### Docker run para httpd
 
-`docker run --name apache -p 4040:80 -d apache`{{execute}}
-- Acessar apache
+`docker run --name httpd -p 4040:80 -d httpd`{{execute}}
+- Acessar httpd
 https://[[HOST_SUBDOMAIN]]-4040-[[KATACODA_HOST]].environments.katacoda.com
 
 - Comando que encerra o container.
 
 `docker ps`{{execute}} <br>
 `docker ps -q`{{execute}}<br>
-`docker stop apache`{{execute}}
+`docker stop httpd`{{execute}}
 
 #### Docker run
 
