@@ -84,7 +84,8 @@ Baixar e docker um imagem do meu repositório de imagens.
 - **--name:** Nome do container;
 
 `docker stop nginx`{{execute}} <br>
-`docker run --name meucontainer -p 4040:80 -d retagliaferro/phpinfokubernetes:tagname`{{execute}} <br>
+`docker login`{{execute}} <br>
+`docker run --name meucontainer -p 4040:80 -d retagliaferro/phpinfokubernetes:1.0`{{execute}} <br>
 
 https://[[HOST_SUBDOMAIN]]-4040-[[KATACODA_HOST]].environments.katacoda.com
 
@@ -127,7 +128,7 @@ Comando que retornar um json com todas as informações relacionadas ao containe
 ##### Docker exec
 Comando que executa comandos de fora (host) para dentro do container.
 
-`clear` {{execute}} <br>
+`clear`{{execute}} <br>
 `docker exec alpine-opus ls -l /`{{execute}}  <br>
 `docker exec alpine-opus hostname`{{execute}}  <br>
 
