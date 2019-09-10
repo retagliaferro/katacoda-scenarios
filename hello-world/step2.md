@@ -1,6 +1,7 @@
 #### Docker pull
 Baixa a imagem no host.
 
+`clear`{{execute}} <br>
 `docker pull nginx`{{execute}} <br>
 `docker pull httpd`{{execute}}
 
@@ -55,6 +56,7 @@ Exibi os logs dos containers
 
 Comando que encerra o container.
 
+`clear`{{execute}} <br>
 `docker ps`{{execute}} <br>
 `docker ps -q`{{execute}} <br>
 `docker stop nginx`{{execute}} <br>
@@ -65,10 +67,24 @@ Comando que encerra o container.
 
 Comando que inicia o container parado.
 
+`clear`{{execute}} <br>
 `docker ps`{{execute}} <br>
 `docker ps -q`{{execute}} <br>
 `docker start nginx`{{execute}} <br>
 `docker ps`{{execute}} <br>
+
+https://[[HOST_SUBDOMAIN]]-4040-[[KATACODA_HOST]].environments.katacoda.com
+
+
+#### Docker run
+Baixar e docker um imagem do meu repositório de imagens.
+
+- **-p:** Porta a porta do container para o host <HOST:CONTAINER>;
+- **-d:** Container seja executado como um processo daemon;
+- **--name:** Nome do container;
+
+`docker stop nginx`{{execute}} <br>
+`docker run --name meucontainer -p 4040:80 -d retagliaferro/phpinfokubernetes:tagname`{{execute}} <br>
 
 https://[[HOST_SUBDOMAIN]]-4040-[[KATACODA_HOST]].environments.katacoda.com
 
@@ -86,13 +102,13 @@ Criar um container Alpine com interatividade com o bash.
 `docker run -t -i  --hostname host-alpine --name alpine-opus alpine /bin/sh`{{execute}}
 
 ##### Sair do container
--Para sair do container sem encerrar o processo do container
-`CRTL + p + q`{{execute}}  <br>
+-Para sair do container sem encerrar o processo do container `CRTL + p + q`<br>
 `exit`{{execute}} <br>
 
 ##### Docker attach
 Comando para retornar dentro do container
 
+`clear`{{execute}} <br>
 `docker start alpine-opus`{{execute}}  <br>
 `docker attach alpine-opus`{{execute}} <br>
 `hostname`{{execute}}  <br>
@@ -113,12 +129,13 @@ Comando que executa comandos de fora (host) para dentro do container.
 
 `clear` {{execute}} <br>
 `docker exec alpine-opus ls -l /`{{execute}}  <br>
+`docker exec alpine-opus hostname`{{execute}}  <br>
 
 ##### Docker rm
 Comando que excluir o container
 
 `clear`{{execute}} <br>
-`docker rm -f nginx`{{execute}}  <br>
+`docker rm -f meucontainer`{{execute}}  <br>
 `docker ps`{{execute}}  <br>
 
 ##### Docker rmi
