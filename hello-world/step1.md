@@ -1,5 +1,3 @@
-## [![N|Solid](https://www.opus-software.com.br/wp-content/uploads/2019/01/opus_logo.png)](https://www.opus-software.com.br) **Opus Software**
-
 ## DOCKER
 
 ### O que é DOCKER

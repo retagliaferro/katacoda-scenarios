@@ -1,41 +1,38 @@
-## [![N|Solid](https://www.opus-software.com.br/wp-content/uploads/2019/01/opus_logo.png)](https://www.opus-software.com.br) **Opus Software**
+#### Docker pull
+Baixa a imagem no host
 
-## DOCKER
+`docker pull nginx`{{execute}}
+`docker pull apache`{{execute}}
 
-### O que é DOCKER
+#### Docker run
+Comando para executar um container. Se a imagem não existir no host, o Docker baixa a imagem e depois executa
 
-**Docker** é uma plataforma Open Source escrito em Go, que é uma linguagem de programação de alto desempenho desenvolvida dentro do Google, que facilita a criação e administração de ambientes isolados.
+- **-p:** Porta a porta do container para o host <HOST:CONTAINER>;
+- **-p:** Container seja executado como um processo daemon;
+- **Name:** Nome do container;
 
-### Help
-Exibi os possiveis comandos e a forma de executá-los.
+`docker run --name nginx -p 4040:80 -d nginx`{{execute}}
+- Acessar nginx
+https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com
 
-`docker help`{{execute}}
+### Docker ps
 
-#### Docker version
-Mostrar as informações da versão do Docker
+Exibi os containers que estão em execução
 
-`docker version`{{execute}}
+`docker ps`{{execute}}
 
-### Docker info
+### Docker stop
 
-Comando para verificarmos as informações do Docker Host.
+Comando que encerra o container.
 
-`docker info`{{execute}}
+`docker ps`{{execute}}
+`docker ps -q`{{execute}}
+`docker stop nginx`{{execute}}
 
-### Docker images
+### Docker start
 
-Lista as imagens que temos no nosso host.
-- **Repository:** repositório;
-- **TAG:** tag utilizada no repositório;
-- **IMAGE ID:** o id na nossa imagem;
-- **Created:** data de quando nós criamos a nossa imagem;
-- **Size:** tamanho da imagem;
+Comando que inicia o container parado.
 
-`docker images`{{execute}}
-
-### Docker search
-
-Para que possamos procurar uma imagem, nós podemos utilizar o comando a baixo com o parâmetro nome Ex.: ubuntu, dotnetcore, node … etc, assim ele irá buscar as imagens que são **compatíveis com o nosso server/host** que para esse exemplo estamos utilizando o Linux.
-
-`docker search nginx`{{execute}}
-`docker search apache`{{execute}}
+`docker ps`{{execute}}
+`docker ps -q`{{execute}}
+`docker start nginx`{{execute}}
