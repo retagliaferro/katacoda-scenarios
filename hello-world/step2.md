@@ -100,7 +100,7 @@ apk add curl wget <br>
 Comando que retornar um json com todas as informações relacionadas ao container.
 
 `clear` <br>
-`docker start alpine-opus` <br>>
+`docker start alpine-opus` <br>
 `docker inspect alpine-opus` <br>
 
 ##### Docker exec
