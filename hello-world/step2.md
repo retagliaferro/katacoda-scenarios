@@ -1,30 +1,35 @@
 #### Docker pull
-Baixa a imagem no host
+Baixa a imagem no host.
 
 `docker pull nginx`{{execute}} <br>
 `docker pull httpd`{{execute}}
 
 #### Docker run
-Comando para executar um container. Se a imagem não existir no host, o Docker baixa a imagem e depois executa
+Comando para executar um container. Se a imagem não existir no host, o Docker baixa a imagem e depois executa.
 
 - **-p:** Porta a porta do container para o host <HOST:CONTAINER>;
 - **-d:** Container seja executado como um processo daemon;
 - **--name:** Nome do container;
 
 `docker run --name nginx -p 4040:80 -d nginx`{{execute}}
+
 - Acessar nginx
 https://[[HOST_SUBDOMAIN]]-4040-[[KATACODA_HOST]].environments.katacoda.com
 
 ### Docker ps
 
-Exibi os containers que estão em execução
+- Exibi os containers que estão em execução no momento
 
 `docker ps`{{execute}}
+
+- Exibi os containers que estão em execução no momento e os parados.
+
+`docker ps -a`{{execute}}
 
 
 ### Docker stats
 
-Exibi quanto o container está consumindo de recursos do host
+Exibi as informações de consumo de recursos do host relacionado ao containers.
 
 - **CONTAINER:** ID do Container;
 - **CPU %:** uso de CPU em porcentagem;
@@ -39,7 +44,7 @@ Exibi quanto o container está consumindo de recursos do host
 
 ### Docker logs
 
-Exibi o log container
+Exibi os logs dos containers
 
 - **-f:** Saída continua dos logs
 
