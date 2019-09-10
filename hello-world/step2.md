@@ -26,12 +26,12 @@ Exibi os containers que estão em execução
 
 Exibi quanto o container está consumindo de recursos do host
 
--** CONTAINER:** ID do Container;
--** CPU %:** uso de CPU em porcentagem;
--** MEM USAGE / LIMIT:** Memória usada/Limite que você pode ter setado;
--** MEM:** uso de memória em porcentagem;
--** NET I/O:** I/O de Internet;
--** BLOCK IO:** Outros processos de I/O;
+-**CONTAINER:** ID do Container;
+-**CPU %:** uso de CPU em porcentagem;
+-**MEM USAGE / LIMIT:** Memória usada/Limite que você pode ter setado;
+-**MEM:** uso de memória em porcentagem;
+-**NET I/O:** I/O de Internet;
+-**BLOCK IO:** Outros processos de I/O;
 
 `clear`{{execute}} <br>
 `docker stats nginx`{{execute}}
@@ -53,8 +53,8 @@ Comando que encerra o container.
 `docker ps`{{execute}} <br>
 `docker ps -q`{{execute}} <br>
 `docker stop nginx`{{execute}} <br>
+`docker ps`{{execute}} <br>
 
-https://[[HOST_SUBDOMAIN]]-4040-[[KATACODA_HOST]].environments.katacoda.com
 
 ### Docker start
 
@@ -63,35 +63,24 @@ Comando que inicia o container parado.
 `docker ps`{{execute}} <br>
 `docker ps -q`{{execute}} <br>
 `docker start nginx`{{execute}} <br>
-
-https://[[HOST_SUBDOMAIN]]-4040-[[KATACODA_HOST]].environments.katacoda.com
-
-#### Docker run para httpd
-
-`docker run --name httpd -p 4040:80 -d httpd`{{execute}}
-- Acessar httpd
-https://[[HOST_SUBDOMAIN]]-4040-[[KATACODA_HOST]].environments.katacoda.com
-
-- Comando que encerra o container.
-
 `docker ps`{{execute}} <br>
-`docker ps -q`{{execute}}<br>
-`docker stop httpd`{{execute}}
+
+https://[[HOST_SUBDOMAIN]]-4040-[[KATACODA_HOST]].environments.katacoda.com
 
 #### Docker run
 
 Criar um container Alpine com interatividade com o bash. 
 
 - **-p:** Container seja executado como um processo daemon;
-- **-i:** Interativo
-- **-t:** Abrir um terminal (tty)
+- **-i:** Interativo;
+- **-t:** Abrir um terminal (tty);
 - **Name:** Nome do container;
 - **--host:** Hostname do container;
 - **/bin/bash:** Bash que sera executado no container;
 
 `docker run -t -i  --hostname host-alpine --name alpine-opus alpine /bin/sh`{{execute}}
 
-##### Docker run
+##### Sair do container
 -Para sair do container sem encerrar o processo do container
 `CRTL + p + q`
 
