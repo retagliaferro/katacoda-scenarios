@@ -26,6 +26,13 @@ Exibi os containers que estão em execução
 
 Exibi quanto o container está consumindo de recursos do host
 
+-** CONTAINER:** ID do Container;
+-** CPU %:** uso de CPU em porcentagem;
+-** MEM USAGE / LIMIT:** Memória usada/Limite que você pode ter setado;
+-** MEM:** uso de memória em porcentagem;
+-** NET I/O:** I/O de Internet;
+-** BLOCK IO:** Outros processos de I/O;
+
 `clear`{{execute}} <br>
 `docker stats nginx`{{execute}}
 
@@ -90,9 +97,29 @@ Criar um container Alpine com interatividade com o bash.
 
 ##### Docker attach
 Comando para retornar dentro do container
+
 `docker attach alpine-opus` <br>
 hostname <br>
 ifconfig <br>
 apk add nginx <br>
 apk add curl wget <br>
 `CRTL + p + q`
+
+##### Docker inspect
+Comando que retornar um json com todas as informações relacionadas ao container.
+
+`docker inspect alpine-opus` <br>
+
+##### Docker exec
+Comando que executa comandos de fora (host) para dentro do container.
+
+`clear` <br>
+`docker exec alpine-opus 'ls -l /'` <br>
+
+
+##### Docker rmi
+Comando que excluir uma imagem
+
+`clear` <br>
+`docker stop alpine-opus` <br>
+`docker rmi alpine-opus` <br>
