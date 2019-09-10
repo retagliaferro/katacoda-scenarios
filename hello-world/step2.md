@@ -82,38 +82,38 @@ Criar um container Alpine com interatividade com o bash.
 
 ##### Sair do container
 -Para sair do container sem encerrar o processo do container
-`CRTL + p + q` <br>
-`exit` <br>
+`CRTL + p + q` {{execute}}  <br>
+`exit` {{execute}} <br>
 
 ##### Docker attach
 Comando para retornar dentro do container
 
-`docker start alpine-opus` <br>
-`docker attach alpine-opus` <br>
-hostname <br>
-ifconfig <br>
-apk add nginx <br>
-apk add curl wget <br>
+`docker start alpine-opus` {{execute}}  <br>
+`docker attach alpine-opus` {{execute}} <br>
+`hostname` {{execute}}  <br>
+`ifconfig` {{execute}} <br>
+`apk add nginx` {{execute}}  <br>
+`apk add curl wget` {{execute}} <br>
 `exit` <br>
 
 ##### Docker inspect
 Comando que retornar um json com todas as informações relacionadas ao container.
 
-`clear` <br>
-`docker start alpine-opus` <br>
-`docker inspect alpine-opus` <br>
+`clear` {{execute}}  <br>
+`docker start alpine-opus` {{execute}}  <br>
+`docker inspect alpine-opus`{{execute}}  <br>
 
 ##### Docker exec
 Comando que executa comandos de fora (host) para dentro do container.
 
-`clear` <br>
-`docker exec alpine-opus 'ls -l /'` <br>
+`clear` {{execute}} <br>
+`docker exec alpine-opus 'ls -l /'` {{execute}}  <br>
 
 
 ##### Docker rmi
 Comando que excluir uma imagem
 
-`clear` <br>
-`docker stop alpine-opus` <br>
-`docker rmi alpine-opus` <br>
-`docker ps` <br>
+`clear` {{execute}} <br>
+`docker stop alpine-opus` {{execute}}  <br>
+`docker rmi alpine-opus` {{execute}}  <br>
+`docker ps` {{execute}}  <br>
