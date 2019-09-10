@@ -7,6 +7,10 @@
     "steps": [{
       "title": "Step 1 - Conhecendo o docker",
       "text": "step1.md"
+    },
+    {
+      "title": "Step 2 - Executar containers",
+      "text": "step2.md"
     }],
     "intro": {
       "text": "intro.md",
