@@ -11,6 +11,10 @@
     {
       "title": "Step 2 - Executar containers",
       "text": "step2.md"
+    },
+    {
+      "title": "Step 3 - Portainer ou Guindaste de contêiners",
+      "text": "step2.md"
     }],
     "intro": {
       "text": "intro.md",

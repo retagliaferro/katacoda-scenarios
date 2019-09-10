@@ -94,12 +94,12 @@ Comando para retornar dentro do container
 `ifconfig`{{execute}} <br>
 `apk add nginx`{{execute}}  <br>
 `apk add curl wget`{{execute}} <br>
-`exit` <br>
+`exit`{{execute}}
 
 ##### Docker inspect
 Comando que retornar um json com todas as informações relacionadas ao container.
 
-`clear` {{execute}}  <br>
+`clear`{{execute}}  <br>
 `docker start alpine-opus`{{execute}}  <br>
 `docker inspect alpine-opus`{{execute}}  <br>
 
@@ -109,12 +109,20 @@ Comando que executa comandos de fora (host) para dentro do container.
 `clear` {{execute}} <br>
 `docker exec alpine-opus ls -l /`{{execute}}  <br>
 
+##### Docker rm
+Comando que excluir o container
+
+`clear`{{execute}} <br>
+`docker stop alpine-opus`{{execute}}  <br>
+`docker rm -f alpine-opus`{{execute}}  <br>
+`docker ps`{{execute}}  <br>
+`docker ps`{{execute}} <br>
 
 ##### Docker rmi
 Comando que excluir uma imagem
 
 `clear`{{execute}} <br>
 `docker stop alpine-opus`{{execute}}  <br>
-`docker rmi alpine-opus`{{execute}}  <br>
+`docker rmi -f alpine`{{execute}}  <br>
 `docker ps`{{execute}}  <br>
 `docker ps`{{execute}} <br>
