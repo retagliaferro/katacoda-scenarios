@@ -37,15 +37,17 @@ Exibi o log container
 - **-f:** Saída continua dos logs
 
 `clear`{{execute}} <br>
-`docker stats nginx -f`{{execute}}
+`docker logs nginx -f`{{execute}}
 
 ### Docker stop
 
 Comando que encerra o container.
 
 `docker ps`{{execute}} <br>
-`docker ps -q`{{execute}}<br>
-`docker stop nginx`{{execute}}
+`docker ps -q`{{execute}} <br>
+`docker stop nginx`{{execute}} <br>
+
+https://[[HOST_SUBDOMAIN]]-4040-[[KATACODA_HOST]].environments.katacoda.com
 
 ### Docker start
 
@@ -53,7 +55,9 @@ Comando que inicia o container parado.
 
 `docker ps`{{execute}} <br>
 `docker ps -q`{{execute}} <br>
-`docker start nginx`{{execute}}
+`docker start nginx`{{execute}} <br>
+
+https://[[HOST_SUBDOMAIN]]-4040-[[KATACODA_HOST]].environments.katacoda.com
 
 #### Docker run para httpd
 
@@ -69,7 +73,7 @@ https://[[HOST_SUBDOMAIN]]-4040-[[KATACODA_HOST]].environments.katacoda.com
 
 #### Docker run
 
-Criar um container Ubuntu com interatividade com o bash. 
+Criar um container Alpine com interatividade com o bash. 
 
 - **-p:** Container seja executado como um processo daemon;
 - **-i:** Interativo
@@ -78,9 +82,17 @@ Criar um container Ubuntu com interatividade com o bash.
 - **--host:** Hostname do container;
 - **/bin/bash:** Bash que sera executado no container;
 
-`docker run -t -i  --hostname ubuntu-opus-1 --name ubuntu-opus ubuntu /bin/bash`{{execute}}
+`docker run -t -i  --hostname host-alpine --name alpine-opus alpine /bin/sh`{{execute}}
 
 ##### Docker run
 -Para sair do container sem encerrar o processo do container
-    CRTL + p + q```bash
-```
+`CRTL + p + q`
+
+##### Docker attach
+Comando para retornar dentro do container
+`docker attach alpine-opus` <br>
+hostname <br>
+ifconfig <br>
+apk add nginx <br>
+apk add curl wget <br>
+`CRTL + p + q`
