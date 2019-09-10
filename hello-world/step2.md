@@ -1,7 +1,7 @@
 #### Docker pull
 Baixa a imagem no host
 
-`docker pull nginx`{{execute}}
+`docker pull nginx`{{execute}} <br>
 `docker pull apache`{{execute}}
 
 #### Docker run
@@ -26,8 +26,8 @@ Exibi os containers que estão em execução
 
 Exibi quanto o container está consumindo de recursos do host
 
-- `clear`{{execute}}
-- `docker stats nginx`{{execute}}
+`clear`{{execute}} <br>
+`docker stats nginx`{{execute}}
 
 
 ### Docker logs
@@ -36,8 +36,8 @@ Exibi o log container
 
 - **-f:** Saída continua dos logs
 
-- `clear`{{execute}}
-- `docker stats nginx -f`{{execute}}
+`clear`{{execute}} <br>
+`docker stats nginx -f`{{execute}}
 
 ### Docker stop
 
@@ -45,7 +45,7 @@ Comando que encerra o container.
 
 `docker ps`{{execute}} <br>
 `docker ps -q`{{execute}}<br>
-`docker stop nginx`{{execute}}<br>
+`docker stop nginx`{{execute}}
 
 ### Docker start
 
@@ -53,7 +53,7 @@ Comando que inicia o container parado.
 
 `docker ps`{{execute}} <br>
 `docker ps -q`{{execute}} <br>
-`docker start nginx`{{execute}} <br>
+`docker start nginx`{{execute}}
 
 #### Docker run para Apache
 
@@ -65,7 +65,7 @@ https://[[HOST_SUBDOMAIN]]-4040-[[KATACODA_HOST]].environments.katacoda.com
 
 `docker ps`{{execute}} <br>
 `docker ps -q`{{execute}}<br>
-`docker stop apache`{{execute}}<br>
+`docker stop apache`{{execute}}
 
 #### Docker run
 
