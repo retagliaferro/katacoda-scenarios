@@ -26,7 +26,7 @@ Comando para executar um container. Se a imagem não existir no host, o Docker b
 - **-d:** Container seja executado como um processo daemon;
 - **--name:** Nome do container;
 
-`docker run --name httpd -p 81:80 -d nginx`{{execute}}
+`docker run --name apache -p 81:80 -d httpd`{{execute}}
 
 - Acessar Apache
 https://[[HOST_SUBDOMAIN]]-81-[[KATACODA_HOST]].environments.katacoda.com
@@ -76,6 +76,7 @@ Comando que encerra o container.
 `docker stop nginx`{{execute}} <br>
 `docker ps`{{execute}} <br>
 
+https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com
 
 ### Docker start
 
@@ -88,7 +89,6 @@ Comando que inicia o container parado.
 `docker ps`{{execute}} <br>
 
 https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com
-
 
 #### Docker run
 
@@ -137,7 +137,7 @@ Comando que executa comandos de fora (host) para dentro do container.
 Comando que excluir o container
 
 `clear`{{execute}} <br>
-`docker rm -f meucontainer`{{execute}}  <br>
+`docker rm -f alpine-opus`{{execute}}  <br>
 `docker ps`{{execute}}  <br>
 
 ##### Docker rmi

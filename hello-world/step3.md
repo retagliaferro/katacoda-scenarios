@@ -21,7 +21,6 @@ Baixar e docker um imagem do meu repositório de imagens.
 - **-d:** Container seja executado como um processo daemon;
 - **--name:** Nome do container;
 
-`docker stop nginx`{{execute}} <br>
 `docker login`{{execute}} <br>
 `docker run --name meucontainer -p 8080:80 -d retagliaferro/phpinfokubernetes:1.0`{{execute}} <br>
 

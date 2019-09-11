@@ -36,4 +36,4 @@ Lista as imagens que estão no nosso host.
 Para que possamos procurar uma imagem, nós podemos utilizar o comando search com o parâmetro nome Ex.: ubuntu, dotnetcore, node … etc, assim ele irá buscar as imagens que são **compatíveis com o nosso server/host**.
 
 `docker search nginx`{{execute}} <br>
-`docker search apache`{{execute}} <br>
+`docker search httpd`{{execute}} <br>
