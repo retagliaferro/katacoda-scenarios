@@ -12,10 +12,24 @@ Comando para executar um container. Se a imagem não existir no host, o Docker b
 - **-d:** Container seja executado como um processo daemon;
 - **--name:** Nome do container;
 
-`docker run --name nginx -p 4040:80 -d nginx`{{execute}}
+`docker run --name nginx -p 80:80 -d nginx`{{execute}}
 
 - Acessar nginx
-https://[[HOST_SUBDOMAIN]]-4040-[[KATACODA_HOST]].environments.katacoda.com
+https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com
+
+
+
+#### Docker run
+Comando para executar um container. Se a imagem não existir no host, o Docker baixa a imagem e depois executa.
+
+- **-p:** Porta a porta do container para o host <HOST:CONTAINER>;
+- **-d:** Container seja executado como um processo daemon;
+- **--name:** Nome do container;
+
+`docker run --name httpd -p 81:80 -d nginx`{{execute}}
+
+- Acessar Apache
+https://[[HOST_SUBDOMAIN]]-81-[[KATACODA_HOST]].environments.katacoda.com
 
 ### Docker ps
 
@@ -73,7 +87,7 @@ Comando que inicia o container parado.
 `docker start nginx`{{execute}} <br>
 `docker ps`{{execute}} <br>
 
-https://[[HOST_SUBDOMAIN]]-4040-[[KATACODA_HOST]].environments.katacoda.com
+https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com
 
 
 #### Docker run
