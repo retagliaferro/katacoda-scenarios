@@ -11,3 +11,17 @@ Solução para gerenciamento de recursos como imagens e containers Docker, netwo
 
 - Acessar o Portainer
 https://[[HOST_SUBDOMAIN]]-4040-[[KATACODA_HOST]].environments.katacoda.com
+
+
+#### Docker run
+Baixar e docker um imagem do meu repositório de imagens.
+
+- **-p:** Porta a porta do container para o host <HOST:CONTAINER>;
+- **-d:** Container seja executado como um processo daemon;
+- **--name:** Nome do container;
+
+`docker stop nginx`{{execute}} <br>
+`docker login`{{execute}} <br>
+`docker run --name meucontainer -p 4040:80 -d retagliaferro/phpinfokubernetes:1.0`{{execute}} <br>
+
+https://[[HOST_SUBDOMAIN]]-4040-[[KATACODA_HOST]].environments.katacoda.com
