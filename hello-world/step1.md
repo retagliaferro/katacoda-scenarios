@@ -11,12 +11,14 @@ Exibi os comandos e como executá-los.
 #### Docker version
 Exibi as informações da versão do Docker.
 
+`clear`{{execute}} <br>
 `docker version`{{execute}}
 
 ### Docker info
 
 Comando para verificarmos as informações do Docker Host.
 
+`clear`{{execute}} <br>
 `docker info`{{execute}}
 
 ### Docker images
@@ -29,11 +31,14 @@ Lista as imagens que estão no nosso host.
 - **Created:** data de quando nós criamos a nossa imagem;
 - **Size:** tamanho da imagem;
 
+`clear`{{execute}} <br>
 `docker images`{{execute}}
 
 ### Docker search
 
 Para que possamos procurar uma imagem, nós podemos utilizar o comando search com o parâmetro nome Ex.: ubuntu, dotnetcore, node … etc, assim ele irá buscar as imagens que são **compatíveis com o nosso server/host**.
 
+`clear`{{execute}} <br>
 `docker search nginx`{{execute}} <br>
+`clear`{{execute}} <br>
 `docker search httpd`{{execute}} <br>

@@ -3,6 +3,7 @@ Baixa a imagem no host.
 
 `clear`{{execute}} <br>
 `docker pull nginx`{{execute}} <br>
+`clear`{{execute}} <br>
 `docker pull httpd`{{execute}}
 
 #### Docker run
@@ -12,6 +13,7 @@ Comando para executar um container. Se a imagem não existir no host, o Docker b
 - **-d:** Container seja executado como um processo daemon;
 - **--name:** Nome do container;
 
+`clear`{{execute}} <br>
 `docker run --name nginx -p 80:80 -d nginx`{{execute}}
 
 - Acessar nginx
@@ -26,6 +28,7 @@ Comando para executar um container. Se a imagem não existir no host, o Docker b
 - **-d:** Container seja executado como um processo daemon;
 - **--name:** Nome do container;
 
+`clear`{{execute}} <br>
 `docker run --name apache -p 81:80 -d httpd`{{execute}}
 
 - Acessar Apache
@@ -35,6 +38,7 @@ https://[[HOST_SUBDOMAIN]]-81-[[KATACODA_HOST]].environments.katacoda.com
 
 - Exibi os containers que estão em execução no momento
 
+`clear`{{execute}} <br>
 `docker ps`{{execute}}
 
 - Exibi os containers que estão em execução no momento e os parados.
@@ -54,7 +58,7 @@ Exibi as informações de consumo de recursos do host relacionado ao containers.
 - **BLOCK IO:** Outros processos de I/O;
 
 `clear`{{execute}} <br>
-`docker stats nginx`{{execute}}
+`docker stats`{{execute}}
 
 
 ### Docker logs
@@ -101,6 +105,7 @@ Criar um container Alpine com interatividade com o bash.
 - **--host:** Hostname do container;
 - **/bin/bash:** Bash que sera executado no container;
 
+`clear`{{execute}} <br>
 `docker run -t -i  --hostname host-alpine --name alpine-opus alpine /bin/sh`{{execute}}
 
 ##### Sair do container
