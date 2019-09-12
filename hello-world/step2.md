@@ -146,9 +146,8 @@ Comando que excluir o container
 `docker ps`{{execute}}  <br>
 
 ##### Docker rmi
-Comando que excluir uma imagem
+Comando que excluir uma imagem do host local
 
 `clear`{{execute}} <br>
-`docker stop alpine-opus`{{execute}}  <br>
 `docker rmi -f alpine`{{execute}}  <br>
 `docker ps`{{execute}}  <br>
